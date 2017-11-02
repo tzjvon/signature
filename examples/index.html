@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telphone=no, email=no">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-touch-fullscreen" content="yes">
+	<meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes">
+	<title>signature</title>
+</head>
+<body style="overflow-x: hidden;">
+	<div style="position: relative; padding-left: 20px; padding-top: 20px;
+	transform: translate(90px, 90px);">
+		<canvas id="myCanvas" width="200" height="200"
+		style="border: 1px solid red;"></canvas>
+	</div>
+
+	<script src="build/signature.js"></script>
+	<script>
+		var myCanvas = document.getElementById("myCanvas")
+		var Sg = new Signature({
+			el: myCanvas,
+			offsetX: -90,
+			offsetY: -90,
+			color: "pink",
+			width: 1
+		})
+	</script>
+
+</body>
+</html>
